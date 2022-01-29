@@ -6,12 +6,11 @@ import Button from '../Button';
 import Auth from '../Auth';
 
 const USER_ENDPOINT = "https://api.spotify.com/v1/me/";
-const TRACKS_ENDPOINT = "https://api.spotify.com/v1/me/top/tracks";
-const ARTISTS_ENDPOINT = "https://api.spotify.com/v1/me/top/artists";
-const RECENT_ENDPOINT = "https://api.spotify.com/v1/me/player/recently-played";
 
 export default function Home() {
-    Auth();
+    useEffect(() => {
+        Auth();
+    }, [])
     const [data, setData] = useState({});
     const token = localStorage.getItem('accessToken');
 

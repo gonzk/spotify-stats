@@ -13,7 +13,7 @@ function Logout() {
     }, []);
 
     const handleLogin = () => {
-        window.location = `${CREDS.AUTH_ENDPOINT}?client_id=${CREDS.CLIENT_ID}&redirect_uri=${CREDS.REDIRECT_URI}&scope=${CREDS.SCOPES_URL}&response_type=${CREDS.RESPONSE_TYPE}&show_dialog=true`;
+        window.location = `${CREDS.AUTH_ENDPOINT}?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=${CREDS.SCOPES_URL}&response_type=${CREDS.RESPONSE_TYPE}&show_dialog=true`;
     }
 
     return (
