@@ -8,9 +8,7 @@ import Auth from '../Auth';
 const USER_ENDPOINT = "https://api.spotify.com/v1/me/";
 
 export default function Home() {
-    useEffect(() => {
-        Auth();
-    }, [])
+    Auth();
     const [data, setData] = useState({});
     const token = localStorage.getItem('accessToken');
 
