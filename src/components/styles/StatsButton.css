@@ -1,0 +1,39 @@
+.stats__item {
+    margin: 32px;
+    float: left;
+    margin-bottom: 0;
+}
+
+.stats_btn {
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    background-color: #1db9546c;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+}
+
+.stats_btn:hover {
+    transition-duration: 0.4s;
+    background-color: #1db954;
+}
+
+@media screen and (max-width: 768px) {
+    .stats__item {
+    margin: 20px;
+    float: left;
+    margin-bottom: 0;
+}
+
+.stats_btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #1db9546c;
+    border: 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    }
+}

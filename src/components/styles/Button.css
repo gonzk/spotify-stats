@@ -1,0 +1,18 @@
+.btn__item {
+    margin-bottom: 32px;
+    
+}
+
+.btn_container {
+    font-size: 18px;
+    padding: 10px 24px;
+    border-radius: 12px;
+    background-color: #1db9546c;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn_container:hover {
+    transition-duration: 0.4s;
+    background-color: #1db954;
+}

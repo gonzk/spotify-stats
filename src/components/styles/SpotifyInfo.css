@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FBF7F4;
+    position: absolute;
+    overflow: auto;
+    height: inherit;
+}
+
+.stats__wrapper ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 100px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data__table {
+    width: 60vw;
+    overflow: auto;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid__recent {
+  display: inline-grid;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px 100px 100px;
+
+}
+
+.grid__tracks {
+  display: inline-grid;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 100px 100px 100px;
+
+}
+
+.grid__tracks {
+  display: inline-grid;
+}
+
+.top-artists-container,
+.get-recent-tracks-container  {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-artists-container h1 {
+        font-size: 30px;
+    }
+
+    .top-artists-container > h1 {
+        font-size: 30px;
+        margin-top: -100px;
+    }
+
+    .top-artists-container p {
+        font-size: 10px;
+    }
+
+    .recently-played-container h1 {
+        font-size: 30px;
+    }
+
+    .data__table__tracks {
+      margin-left: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .data__table__recent {
+    width: 100vw;
+  }
+
+  .grid {
+  font-size: 10px;
+    width: 90vw;
+  }
+
+  .data__table__tracks {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,29 @@
+.artist {
+    margin:0 2.5%;
+    width:20%;
+}
+
+.time {
+    margin:0 2.5%;
+    width:30%;
+}
+
+.column {
+  background-color: #FBF7F4;
+  padding: 10px;
+  text-align: center;
+  justify-items: center;
+}
+
+.column__text {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+
+@media screen and (max-width: 768px) {
+  .column__audio audio {
+    width: 40vw;
+  }
+}
