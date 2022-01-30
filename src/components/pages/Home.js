@@ -1,5 +1,5 @@
 import '../../App.css';
-import React, {useEffect, useState, Component } from 'react';
+import React, {useEffect, useState } from 'react';
 import axios from 'axios';
 import "../styles/Home.css"
 import Button from '../Button';
@@ -9,7 +9,10 @@ import Footer from '../Footer';
 const USER_ENDPOINT = "https://api.spotify.com/v1/me/";
 
 export default function Home() {
-    Auth();
+    useEffect(() => {
+        Auth();
+    }, []);
+    
     const [data, setData] = useState({});
     const token = localStorage.getItem('accessToken');
 
