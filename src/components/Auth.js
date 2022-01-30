@@ -15,8 +15,8 @@ export default function Auth() {
 
     useEffect(() => {
         if (window.location.hash) {
-            const { access_token, expires_in, token_type } =
-                getSpotifyAuthResults(window.location.hash);
+        const { access_token, expires_in, token_type } =
+            getSpotifyAuthResults(window.location.hash);
 
         localStorage.clear();
         window.history.pushState({}, null, '/');
