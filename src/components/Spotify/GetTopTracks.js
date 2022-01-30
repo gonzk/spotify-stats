@@ -56,7 +56,7 @@ function GetTopTracks() {
                         <div className="grid grid__tracks">
                             {data?.items ? data.items.map((item, index) => 
                                 <TableRowTracks key={`${item.duration_ms} + ${index}`} img={item.album.images[2].url} name={item.name}
-                                    artist={item.artists[0].name} url={item.preview_url}></TableRowTracks>) : null}
+                                    artist={item.artists[0].name} url={item.external_urls.spotify} id={item.id}></TableRowTracks>) : null}
                         </div>
                     </div>
                 </div>

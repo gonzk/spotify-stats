@@ -94,7 +94,7 @@
 
     .data__table__tracks {
       margin-left: 10px;
-      overflow: hidden;
+      overflow: auto;
       display: flex;
       align-items: center;
       justify-content: center;

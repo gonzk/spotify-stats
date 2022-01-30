@@ -41,7 +41,7 @@ function GetRecentlyPlayed() {
                         <div className="grid grid__recent">
                             {data?.items ? data.items.map((item) =>
                                 <TableRow key={`${item.played_at} + ${item.track.uri}`} img={item.track.album.images[2].url} name={item.track.name}
-                                    artist={item.track.artists[0].name} time={item.played_at}></TableRow>) : null}
+                                    artist={item.track.artists[0].name} time={item.played_at} url={item.track.external_urls.spotify}></TableRow>) : null}
                         </div>
                     </div>
                 </div>
