@@ -62,6 +62,11 @@
 
 .grid__tracks {
   display: inline-grid;
+  margin-bottom: 80px;
+}
+
+.grid__recent {
+  margin-bottom: 80px;
 }
 
 .top-artists-container,

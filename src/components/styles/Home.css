@@ -1,16 +1,13 @@
 .container {
     height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    text-align: center;
-    background-color: #FBF7F4;
-    position: absolute;
-    overflow: auto;
-    height: inherit;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  text-align: center;
+  background-color: #FBF7F4;
 }
 
 .hello {
@@ -29,4 +26,20 @@
 .home-description {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 70vw;
+    }
+    .home-description {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .button-container {
+        margin-bottom: 100px;
+    }
+
+    .footer-container { margin: 10px;}
 }

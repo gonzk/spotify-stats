@@ -1,7 +1,7 @@
 .footer-container {
   background: #FBF7F4;
   border-top: 1px solid #96dee567;
-  padding: 0 0 2rem 0;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,8 @@
 }
 
 .social-media {
-  max-width: 1000px;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -23,7 +24,6 @@
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
 }
 
 
@@ -57,7 +57,4 @@
   .social-media-wrap {
     flex-direction: column;
   }
-}
-
-@media screen and (max-width: 768px) {
 }

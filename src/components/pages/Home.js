@@ -4,6 +4,7 @@ import axios from 'axios';
 import "../styles/Home.css"
 import Button from '../Button';
 import Auth from '../Auth';
+import Footer from '../Footer';
 
 const USER_ENDPOINT = "https://api.spotify.com/v1/me/";
 
@@ -42,7 +43,9 @@ export default function Home() {
                         <Button path="/recently-played" title="Recently Played"></Button>
                     </ul>
                 </div>
+                
         </div>
+        <Footer />
         </>
     );
 }

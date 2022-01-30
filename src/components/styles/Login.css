@@ -8,7 +8,7 @@
   object-fit: contain;
   text-align: center;
   background-color: #FBF7F4;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .login-title {
